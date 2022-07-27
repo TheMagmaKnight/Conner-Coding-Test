@@ -13,6 +13,11 @@
 		561928D72891910A001A219B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561928D62891910A001A219B /* Preview Assets.xcassets */; };
 		561928D92891910A001A219B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561928D82891910A001A219B /* Persistence.swift */; };
 		561928DC2891910B001A219B /* Conner_Coding_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 561928DA2891910B001A219B /* Conner_Coding_Test.xcdatamodeld */; };
+		561928E32891927A001A219B /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561928E22891927A001A219B /* ViewModels.swift */; };
+		561928E5289193DA001A219B /* services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561928E4289193DA001A219B /* services.swift */; };
+		561928E728919E36001A219B /* DepartmentInfoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561928E628919E36001A219B /* DepartmentInfoStoryboard.storyboard */; };
+		561928E928919F82001A219B /* DepartmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561928E828919F82001A219B /* DepartmentsTableViewCell.swift */; };
+		561928EB28919F9B001A219B /* DepartmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561928EA28919F9B001A219B /* DepartmentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		561928D62891910A001A219B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		561928D82891910A001A219B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		561928DB2891910B001A219B /* Conner_Coding_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conner_Coding_Test.xcdatamodel; sourceTree = "<group>"; };
+		561928E22891927A001A219B /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		561928E4289193DA001A219B /* services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = services.swift; sourceTree = "<group>"; };
+		561928E628919E36001A219B /* DepartmentInfoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DepartmentInfoStoryboard.storyboard; sourceTree = "<group>"; };
+		561928E828919F82001A219B /* DepartmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsTableViewCell.swift; sourceTree = "<group>"; };
+		561928EA28919F9B001A219B /* DepartmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 		561928CE28919108001A219B /* Conner Coding Test */ = {
 			isa = PBXGroup;
 			children = (
+				561928EA28919F9B001A219B /* DepartmentsViewController.swift */,
+				561928E828919F82001A219B /* DepartmentsTableViewCell.swift */,
+				561928E628919E36001A219B /* DepartmentInfoStoryboard.storyboard */,
 				561928CF28919108001A219B /* Conner_Coding_TestApp.swift */,
 				561928D128919108001A219B /* ContentView.swift */,
+				561928E4289193DA001A219B /* services.swift */,
+				561928E22891927A001A219B /* ViewModels.swift */,
 				561928D32891910A001A219B /* Assets.xcassets */,
 				561928D82891910A001A219B /* Persistence.swift */,
 				561928DA2891910B001A219B /* Conner_Coding_Test.xcdatamodeld */,
@@ -133,6 +148,7 @@
 			files = (
 				561928D72891910A001A219B /* Preview Assets.xcassets in Resources */,
 				561928D42891910A001A219B /* Assets.xcassets in Resources */,
+				561928E728919E36001A219B /* DepartmentInfoStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561928EB28919F9B001A219B /* DepartmentsViewController.swift in Sources */,
 				561928D92891910A001A219B /* Persistence.swift in Sources */,
+				561928E928919F82001A219B /* DepartmentsTableViewCell.swift in Sources */,
 				561928D228919108001A219B /* ContentView.swift in Sources */,
+				561928E32891927A001A219B /* ViewModels.swift in Sources */,
+				561928E5289193DA001A219B /* services.swift in Sources */,
 				561928DC2891910B001A219B /* Conner_Coding_Test.xcdatamodeld in Sources */,
 				561928D028919108001A219B /* Conner_Coding_TestApp.swift in Sources */,
 			);
@@ -280,6 +300,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = DepartmentInfoStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,6 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = DepartmentInfoStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
